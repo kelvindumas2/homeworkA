@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package homeworka;
+      import java.util.Scanner;
 
 /**
  *
@@ -15,6 +16,26 @@ public class HomeworkA {
      */
     public static void main(String[] args) {
         System.out.println("hello world!");
+         
+  
+        // Create a Scanner object for user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for their name
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        // Generate a random ID number
+        int randomId = (int) (Math.random() * 1000);
+
+        // Display a personalized greeting with the random ID
+        System.out.println("Hello, " + name + "! Your ID number is: " + randomId);
+
+        // Close the scanner
+        scanner.close();
     }
-    
 }
+
+    
+    
+
